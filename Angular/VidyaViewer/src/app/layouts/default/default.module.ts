@@ -10,6 +10,7 @@ import { ProductionCompaniesComponent } from '../../modules/production-companies
 import { VendorsComponent } from '../../modules/vendors/vendors.component';
 
 
+
 @NgModule({
   declarations: [
     DefaultComponent,
@@ -18,6 +19,7 @@ import { VendorsComponent } from '../../modules/vendors/vendors.component';
     ProductionCompaniesComponent,
     VendorsComponent
   ],
+  
   imports: [
     CommonModule,
     RouterModule,

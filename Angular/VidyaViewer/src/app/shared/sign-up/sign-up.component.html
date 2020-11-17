@@ -1,0 +1,33 @@
+<form [formGroup]="service.form" class= "normal-form">
+    <div class= "controls-container">
+        <h2>{{signUp}}</h2>
+        <h3> * indicates required field</h3>
+        <input type= "hidden" formControlName="$usrKey">
+        <mat-form-field>
+            <input formControlName="usrName" matInput placeholder="Desired User Name*">
+            <mat-error> cannot be left blank</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input formControlName="firstName" matInput placeholder="First Name*">
+            <mat-error> cannot be left blank</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input formControlName="lastName" matInput placeholder="Last Name*">
+            <mat-error> cannot be left blank</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input formControlName="passwrd" matInput placeholder="Password*">
+            <mat-error> cannot be left blank</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+        <input formControlName="passwrd_check" matInput placeholder="Confirm Password*">
+        <mat-error> cannot be left blank</mat-error>
+        </mat-form-field>
+
+        <div class="button-row">
+            <button mat-raised-button color="primary" type= "submit"> Submit</button>
+            <button mat-raised-button type="basic"> Cancel</button>
+        </div>
+    </div>
+
+</form>

@@ -2,3 +2,20 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+form.normal-form{
+    margin:10px;
+}
+
+.controls-container{
+    width:100%;
+    padding: 5%;
+}
+
+.controls-container > *{
+    width:100%;
+}
+
+.button-row button{
+    margin:5px;
+}
