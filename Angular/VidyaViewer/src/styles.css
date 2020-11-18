@@ -8,12 +8,12 @@ form.normal-form{
 }
 
 .controls-container{
-    width:100%;
+    width:75%;
     padding: 5%;
 }
 
 .controls-container > *{
-    width:100%;
+    width:75%;
 }
 
 .button-row button{

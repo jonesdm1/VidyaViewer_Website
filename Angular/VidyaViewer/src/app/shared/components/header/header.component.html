@@ -14,15 +14,15 @@
   </mat-toolbar-row>
 </mat-toolbar>
 <mat-menu #userMenu="matMenu">
-  <button mat-menu-item>
+  <button mat-menu-item (click)="onSignup()">
     Sign Up
   </button>
   <mat-divider></mat-divider>
-  <button mat-menu-item>
+  <button mat-menu-item (click)="onLogin()">
     Login
   </button>
   <mat-divider></mat-divider>
-  <button mat-menu-item>
+  <button mat-menu-item (click)="onAdminLogin()">
     Admin Login
   </button>
   <mat-divider></mat-divider>

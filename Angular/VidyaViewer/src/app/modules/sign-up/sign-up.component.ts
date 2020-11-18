@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SignUpService } from '../sign-up.service';
+import { SignUpService } from '../../shared/Services/sign-up/sign-up.service';
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
@@ -7,11 +7,16 @@ import { SignUpService } from '../sign-up.service';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor(public service: SignUpService) { }
+  constructor(public signServ: SignUpService) { }
 
   signUp: string= "Sign-Up";
   ngOnInit(): void {
     
+  }
+
+  onCancel(){
+    this.signServ.formSign.reset();
+    this.signServ.initializeFormGroup();
   }
 
 }

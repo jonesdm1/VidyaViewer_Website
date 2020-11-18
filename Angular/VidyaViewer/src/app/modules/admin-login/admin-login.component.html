@@ -1,0 +1,19 @@
+<form [formGroup]="adminLoginServ.formAdminLogin" class= "normal-form">
+    <div class= "controls-container">
+        <h2>{{adminLogin}}</h2>
+        <input type= "hidden" formControlName="$usrKey">
+        <mat-form-field>
+            <input formControlName="usrName" matInput placeholder=" User Name">
+            <mat-error> cannot be left blank</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input type="password" formControlName="passwrd" matInput placeholder="Password">
+            <mat-error> cannot be left blank</mat-error>
+        </mat-form-field>
+ 
+        <div class="button-row">
+            <button mat-raised-button color="primary" type= "submit" [disabled]="adminLoginServ.formAdminLogin.invalid"> Submit</button>
+            <button mat-raised-button type="basic" (click)="onCancel()"> Cancel</button>
+        </div>
+    </div>
+</form>
