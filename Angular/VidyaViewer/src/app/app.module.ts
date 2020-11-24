@@ -7,20 +7,37 @@ import { DefaultModule } from './layouts/default/default.module';
 import { SignUpComponent } from './modules/sign-up/sign-up.component';
 import { LoginComponent } from './modules/login/login.component';
 import { AdminLoginComponent } from './modules/admin-login/admin-login.component';
+import { MaterialModule} from './shared/material/material.module';
+import { GameUpdateComponent } from './modules/AdminUpdates/game-update/game-update.component';
+import { ProductionCompaniesUpdateComponent } from './modules/AdminUpdates/production-companies-update/production-companies-update.component';
+import { ThemeUpdateComponent } from './modules/AdminUpdates/theme-update/theme-update.component';
+import { VendorsUpdateComponent } from './modules/AdminUpdates/vendors-update/vendors-update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    
+    GameUpdateComponent,
+    ProductionCompaniesUpdateComponent,
+    ThemeUpdateComponent,
+    VendorsUpdateComponent,    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    DefaultModule
+    DefaultModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [SignUpComponent, LoginComponent, AdminLoginComponent]
+  entryComponents: [
+    SignUpComponent,
+    LoginComponent,
+    AdminLoginComponent,
+    GameUpdateComponent,
+    ProductionCompaniesUpdateComponent,
+    ThemeUpdateComponent,
+    VendorsUpdateComponent
+  ]
 })
 export class AppModule { }
