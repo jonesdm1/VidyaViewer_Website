@@ -11,6 +11,7 @@ import { AdminLoginComponent } from './modules/admin-login/admin-login.component
 @NgModule({
   declarations: [
     AppComponent,
+    
   ],
   imports: [
     BrowserModule,
