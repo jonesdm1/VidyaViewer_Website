@@ -11,6 +11,7 @@ import { AdminLoginComponent } from '../modules/admin-login/admin-login.componen
 import { SignUpComponent } from '../modules/sign-up/sign-up.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -18,7 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SidebarComponent,
     SignUpComponent,
     LoginComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
   ],
 
   imports: [
@@ -35,7 +36,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     SidebarComponent,
     SignUpComponent,
     LoginComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
   ]
 })
 export class SharedModule { }
