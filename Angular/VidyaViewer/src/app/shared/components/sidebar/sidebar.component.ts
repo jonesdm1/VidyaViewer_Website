@@ -15,29 +15,50 @@ import { GameUpdateComponent } from 'src/app/modules/AdminUpdates/game-update/ga
 export class SidebarComponent implements OnInit {
 
   constructor(public themesUpdateDialog: MatDialog, public productionCoUpdateDialog: MatDialog,
-     public vendorsUpdateDialog: MatDialog, public gamesAddOrUpdateDialog: MatDialog) { }
+     public vendorsUpdateDialog: MatDialog, public gamesUpdateDialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
   onThemesUpdate()
   {
-    this.themesUpdateDialog.open(ThemeUpdateComponent);
+    const themesDialogRef= this.themesUpdateDialog.open(ThemeUpdateComponent, {
+      width: '500px'});
+
+    themesDialogRef.afterClosed().subscribe(result => {
+    console.log('themesUpdateDialog was closed');
+    })
   }
 
   onProductionCompaniesUpdate()
   {
-    this.productionCoUpdateDialog.open(ProductionCompaniesUpdateComponent);
+    const prodCoDialogRef = this.productionCoUpdateDialog.open(ProductionCompaniesUpdateComponent, {
+      width: '500px'});
+
+    prodCoDialogRef.afterClosed().subscribe(result => {
+      console.log('productionCoUpdateDialog was closed');
+    })
   }
 
   onVendorsUpdate()
   {
-    this.vendorsUpdateDialog.open(VendorsUpdateComponent);
+    const vendorsDialogRef= this.vendorsUpdateDialog.open(VendorsUpdateComponent, {
+      width: '500px'});
+
+    vendorsDialogRef.afterClosed().subscribe(result => {
+      console.log('vendorsUpdateDialog was closed');
+    })
+    
   }
 
-  onAddAndEditGames()
+  onGamesUpdate()
   {
-    this.gamesAddOrUpdateDialog.open(GameUpdateComponent);
+    const gamesDialogRef= this.gamesUpdateDialog.open(GameUpdateComponent, {
+      width: '500px'});
+
+    gamesDialogRef.afterClosed().subscribe(result => {
+      console.log('gamesUpdateDialog was closed');
+    })
   }
 
 }

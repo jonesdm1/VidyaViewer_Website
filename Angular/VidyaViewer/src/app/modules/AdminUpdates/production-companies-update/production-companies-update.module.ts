@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatGridList} from '@angular/material/grid-list';
+import { MaterialModule } from 'src/app/shared/material/material.module';
 import { ProductionCompaniesUpdateComponent } from './production-companies-update.component';
 
 
@@ -10,7 +10,7 @@ import { ProductionCompaniesUpdateComponent } from './production-companies-updat
   ],
   imports: [
     CommonModule,
-    MatGridList
+    MaterialModule
   ]
 })
 export class ProductionCompaniesUpdateModule { }

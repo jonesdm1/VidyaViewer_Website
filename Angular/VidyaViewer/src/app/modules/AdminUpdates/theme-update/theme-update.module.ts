@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from 'src/app/shared/material/material.module';
-import { GameUpdateComponent } from './game-update.component';
+import { ThemeUpdateComponent } from './theme-update.component';
 
 
-
-@NgModule({
-  declarations: [ GameUpdateComponent],
-  imports: [
+@NgModule ({
+    declarations:[
+    ThemeUpdateComponent
+    ],
+    imports:[
     CommonModule,
     MaterialModule
-  ]
+    ]
 })
-export class GameUpdateModule { }
+
+export class ThemeUpdateModule { }
